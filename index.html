@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <title>Object Finder Web App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="images.jpg">
+    <center>
+    <div class="btn btn-warning heading">
+        <h2 style="color:black;">AI Object Finder</h2>
+        <h5 style="margin-top:10px; color:crimson">NOTE: Enter the object name and then the CoCoSSD model will detect it for you</h5>
+    </div>
+    <div class="container">
+        <label style="font-size:13px; margin-top:20px;">Object Name:</label><br>
+        <input id="input"><br>
+        <button onclick="start()" class="btn btn-primary button">Start</button><br>
+        <h2 id="status" class="btn btn-info"></h2>
+        <h2 id="objectfound" class="btn btn-info"></h2>
+    </div>
+
+    </center>
+</body>
+<script src="main.js"></script>
+</html>
